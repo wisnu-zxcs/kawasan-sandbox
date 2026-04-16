@@ -1,0 +1,12 @@
+{
+  "name": "@repo/server",
+  "version": "1.0.0",
+  "description": "",
+  "packageManager": "pnpm@10.33.0",
+  "devDependencies": {
+    "@repo/config": "workspace:*"
+  },
+  "exports": {
+    "./*": "./src/*"
+  }
+}
