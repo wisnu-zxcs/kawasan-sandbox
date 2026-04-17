@@ -13,8 +13,8 @@
   "scripts": {
     "dev": "turbo dev",
     "build": "turbo build",
+    "start": "turbo start",
     "lint": "turbo lint",
-    "format": "turbo format",
     "typecheck": "turbo typecheck"
   },
   "devDependencies": {
