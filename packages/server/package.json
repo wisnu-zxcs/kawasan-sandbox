@@ -5,15 +5,22 @@
   "type": "module",
   "private": true,
   "packageManager": "pnpm@10.33.0",
-  "devDependencies": {
-    "@repo/config": "workspace:*",
-    "@types/node": "25.6.0"
-  },
-  "exports": {
-    "./*": "./src/*"
+  "scripts": {
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "firebase": "^12.12.0",
     "firebase-admin": "13.8.0"
+  },
+  "devDependencies": {
+    "@repo/config": "workspace:*",
+    "@types/node": "25.6.0",
+    "typescript": "6.0.3"
+  },
+  "exports": {
+    "./hooks/*": "./src/hooks/*",
+    "./lib/*": "./src/lib/*",
+    "./services/*": "./src/services/*",
+    "./types/*": "./src/types/*"
   }
 }

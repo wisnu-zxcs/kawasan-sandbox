@@ -1,7 +1,7 @@
 import { getApps, initializeApp, type FirebaseApp } from "firebase/app"
 import { getAuth, type Auth } from "firebase/auth"
 import { getFirestore, type Firestore } from "firebase/firestore"
-import { env } from "@/private/gcp/env.gcp"
+import { env } from "./env.gcp.js"
 
 function firebaseApp(): FirebaseApp {
     const apps = getApps()
