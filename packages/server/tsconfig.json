@@ -1,13 +1,17 @@
 {
-    "extends": "@repo/config/typescript/base.json",
+    "extends": "@repo/config/typescript/server.json",
     "compilerOptions": {
-        "types": [
-            "node"
-        ],
         "paths": {
             "@repo/server/*": [
                 "./src/*"
             ]
         }
-    }
+    },
+    "include": [
+        "src/**/*.ts",
+        "src/**/*.tsx"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
 }
